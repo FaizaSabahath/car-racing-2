@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background-image: url("race.gif");
+    background-position: center;
+    background-size: cover;
+	text-align: center;
+}
+#myCanvas
+{
+	border-width:10px;
+	background-color: white; 
+	border-style:ridge;
+}
+
+h4
+{
+	color: white !important;
+}
+#heading{
+    color: aliceblue;
+    background-color: black;
+    border: 5px solid cyan;
+    border-style: ridge;
+}
+#status{
+    background-color: darkblue;
+    color:cyan;
+    border: 5px solid rgb(5, 119, 119);
+    border-style: ridge;
+}
+</style>		
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css">
+	<title>Moving Rover On</title>
+</head>
+<body onload="add()">
+<center>
+<h1 id="heading">Car Racing</h1>
+<h1 id="status">Game Status : <span id="game_status"></span></h1>
+<h4>
+	<b class="text-primary">Note : </b>Click on the cars to start. <br> 
+</h4>
+<canvas id="myCanvas" width="800" height="600"></canvas><br>
+<h4>
+	<b class="text-danger">NOTE : </b> IF THE CARS ARE NOT VISIBLE, PRESS ANY ARROW KEY
+</h4> 
+<h4>
+	<b class="text-info">White Car - </b>Press Arrow Keys to move. <br> 
+</h4>
+<h4>
+	<b class="text-warning">Pink Car - </b>Press W to move up, S to move down, A to move left and D to move right.
+</h4>
+</center>
+<script src="main.js">
+</script>
+</body>
+</html>
